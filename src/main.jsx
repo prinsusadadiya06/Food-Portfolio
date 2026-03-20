@@ -12,44 +12,42 @@ import Clientalbums from './Clientalbums'
 import Editorial from './Editorial'
 
 
-let allpages = createBrowserRouter([
-
-  {
-    path: "/",
-    element: <Home />
-  },
-  {
-    path: "/portfolio",
-    element: <Portfolio />
-  },
-  {
-    path: "/about",
-    element: <About />
-  },
-  {
-    path: "/books",
-    element: <Books />
-  },
-  {
-    path: "/blog",
-    element: <Blog />
-  },
-  {
-    path: "/client",
-    element: <Clientalbums />
-  },
-  {
-    path: "/contact",
-    element: <Contact />
-  },
-  {
-    path: "/Editorial/:id",
-    element: <Editorial />
-  },
-],
-  {
-    basename: "/FoodPortfolio"   
-  })
+let allpages = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Home />
+    },
+    {
+      path: "/portfolio",
+      element: <Portfolio />
+    },
+    {
+      path: "/about",
+      element: <About />
+    },
+    {
+      path: "/books",
+      element: <Books />
+    },
+    {
+      path: "/blog",
+      element: <Blog />
+    },
+    {
+      path: "/client",
+      element: <Clientalbums />
+    },
+    {
+      path: "/contact",
+      element: <Contact />
+    },
+    {
+      path: "/Editorial/:id",
+      element: <Editorial />
+    },
+  ]
+)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
