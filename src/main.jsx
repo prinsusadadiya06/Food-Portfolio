@@ -46,7 +46,10 @@ let allpages = createBrowserRouter([
     path: "/Editorial/:id",
     element: <Editorial />
   },
-])
+],
+  {
+    basename: "/FoodPortfolio"   
+  })
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
