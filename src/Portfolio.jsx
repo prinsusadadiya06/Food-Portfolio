@@ -14,7 +14,7 @@ const Portfolio = () => {
 
       {/* portfolio */}
 
-      <div className='logo text-[40px]  pb-[40px] text-center pt-[100px]'>PORTFOLIO</div>
+      <div className='logo md:text-[40px] text-2xl  pb-[20px] text-center pt-[100px]'>PORTFOLIO</div>
 
       <div className="max-w-[1440px] mx-auto sm:flex gap-2">
         {data.map((v, i) => {
@@ -25,9 +25,9 @@ const Portfolio = () => {
                 <Link to={`/Editorial/${v.id}`}>
                   <img src={v.url} className='relative' alt="" />
                 </Link>
-                <p className='text-white absolute logo text-[40px] pt-[50px] sm:block hidden'>{v.title}</p>
+                <p className='text-white absolute logo md:text-[40px] text-2xl pt-[50px] sm:block hidden'>{v.title}</p>
               </div>
-              <p className='text-black text-center logo sm:text-[20px] text-[40px] pb-[30px]  sm:hidden block'>{v.title}</p>
+              <p className='text-black text-center logo md:text-[40px] text-2xl pb-[30px]  sm:hidden block'>{v.title}</p>
             </div>
           )
         })}
